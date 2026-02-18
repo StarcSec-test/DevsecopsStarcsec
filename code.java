@@ -16,7 +16,7 @@ public class HelloVulnServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
             // Initialize in-memory H2 database
-            conn = DriverManager.getConnection("jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1", "sidd", "");
+            conn = DriverManager.getConnection("jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1", "sid", "");
             Statement stmt = conn.createStatement();
             stmt.execute("CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(50), bio VARCHAR(255));");
             stmt.execute("INSERT INTO users (username, bio) VALUES ('alice', 'I love cats'), ('bob', 'I love coffee');");
