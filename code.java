@@ -5,7 +5,7 @@ public class UserDataService {
     
     // VULNERABILITY 1: Hardcoded Secret (CWE-798)
     // Storing sensitive keys in plain text is a major security risk.
-    private static final String API_KEY = "SK-8a2f9b3c4d5e6f7g8h9i0j1k2l3m4n5o";
+    private static final String API_KEY = "SK-8a2f9b3c4d5e6f7g8h9i0j1k2l3m4n5oo";
 
     public void removeUser(Connection conn, String userId) throws Exception {
         Statement statement = conn.createStatement();
