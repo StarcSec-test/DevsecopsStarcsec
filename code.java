@@ -2,7 +2,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement; // Fixed: Using PreparedStatements
 
 public class UserDataService {
-    
+     
     // FIXED: API_KEY is now retrieved from the environment, not hardcoded.
     private static final String API_KEY = System.getenv("API_KEY");
 
